@@ -23,4 +23,10 @@ public:
 	double getWidth() { return width; }
 	double getDurability() { return durability; }
 	string getId() { return id; }
+	~Banknote() {}
 };
+
+int main()
+{
+
+}
