@@ -1,6 +1,7 @@
 #include<iostream>
 
 using std::string;
+using std::cout;
 
 class Banknote
 {
@@ -18,12 +19,16 @@ public:
 	{
 		if (this->durability > 0) this->durability -= 20;
 	}
-	int getPrice() { return price; }
-	string getCurrency() { return currency; }
-	double getHeight() { return height; }
-	double getWidth() { return width; }
-	double getDurability() { return durability; }
-	string getId() { return id; }
+	int getPrice() { return this->price; }
+	string getCurrency() { return this->currency; }
+	double getHeight() { return this->height; }
+	double getWidth() { return this->width; }
+	double getDurability() { return this->durability; }
+	string getId() { return this->id; }
+	void print()
+	{
+		cout << "price: " << price << "\tcurrency: " << currency << "\theight: " << height << "\twidth: " << width << "\tid: " << id << "\tyear: " << year << "\n";
+	}
 	~Banknote() {}
 };
 
